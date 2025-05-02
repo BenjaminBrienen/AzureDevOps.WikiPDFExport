@@ -6,4 +6,4 @@ After cloning the Wiki repo:
 
 You can use the following command:
 
-`.\azuredevops-export-wiki.exe --path "path/to/wiki" --header-url example-header.html --footer-url example-footer.html --output D:\temp\test.pdf`
+`.\AzureDevOps.WikiPDFExport.exe --path "path/to/wiki" --header-url example-header.html --footer-url example-footer.html --output D:\temp\test.pdf`
