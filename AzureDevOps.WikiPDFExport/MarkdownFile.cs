@@ -24,8 +24,7 @@ internal class MarkdownFile
 		Content = content ?? (
 			file.Exists
 				? File.ReadAllText(file.FullName)
-				: string.Empty
-			);
+				: string.Empty);
 	}
 
 	public override string ToString()

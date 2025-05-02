@@ -63,8 +63,7 @@ internal class WikiOptionFilesScanner(string wikiPath, Options options, ILogger 
 					new FileInfo(absolutePath),
 					$"{relativePath}",
 					level,
-					absolutePath[_basePath.Length..].Replace('\\', '/')
-					);
+					absolutePath[_basePath.Length..].Replace('\\', '/'));
 				if (mf.PartialMatches(excludeRegexes))
 				{
 					Log($"Skipping page: {mf.AbsolutePath}", LogLevel.Information, 2);

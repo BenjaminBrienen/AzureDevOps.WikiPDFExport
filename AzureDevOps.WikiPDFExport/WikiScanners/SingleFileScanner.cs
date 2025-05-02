@@ -104,8 +104,7 @@ internal class SingleFileScanner(
 					new FileInfo(absolutePath),
 					$"{relativePath}",
 					level,
-					absolutePath[_basePath.Length..].Replace('\\', '/')
-					);
+					absolutePath[_basePath.Length..].Replace('\\', '/'));
 				result.Add(mf);
 				Log($"Adding page: {mf.AbsolutePath}", LogLevel.Information, 2);
 				var childPath = Path.Combine(orderFile.Directory.FullName, order);

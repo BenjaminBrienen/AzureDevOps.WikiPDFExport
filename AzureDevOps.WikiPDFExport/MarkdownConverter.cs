@@ -44,9 +44,7 @@ internal partial class MarkdownConverter : ILogger
 			.UseEmojiAndSmiley()
 			.UseAdvancedExtensions()
 			.UseYamlFrontMatter()
-			.UseTableOfContent(
-				tocAction: opt => { opt.ContainerTag = "div"; opt.ContainerClass = "toc"; }
-			);
+			.UseTableOfContent(options => { options.ContainerTag = "div"; options.ContainerClass = "toc"; });
 
 		// must be handled by us to have linking across files
 		_ = pipelineBuilder.Extensions.RemoveAll(x => x is Markdig.Extensions.AutoIdentifiers.AutoIdentifierExtension);
