@@ -488,7 +488,7 @@ To escape emojis, enclose them using the \` character.
  `:smile:` `:)` `:angry:`
 
 See a full list of emoji and how they render [on the Emoji page](./emoji.md#Full-set-of-Emoji)
-(this is also an example of a link wiht an anchor to another pase)
+(this is also an example of a link with an anchor to another page)
 
 
 ## Ignore or escape Markdown syntax to enter specific or literal characters

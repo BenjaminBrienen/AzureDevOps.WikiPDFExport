@@ -1,0 +1,9 @@
+[files]
+extend-exclude = ["AzureDevOps.WikiPDFExport.Test/test-data/"]
+ignore-hidden = true
+
+[default]
+extend-ignore-re = [
+  "(?Rm)^.*(#|//)\\s*spellchecker:disable-line$",
+  "(?s)(#|//)\\s*spellchecker:off.*?\\n\\s*(#|//)\\s*spellchecker:on",
+]

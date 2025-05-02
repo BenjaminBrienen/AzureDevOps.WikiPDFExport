@@ -62,7 +62,7 @@ Add the following bundles in the header tag of your Layout page:
 @Styles.Render("~/bundles/sampletoSitecss")
 ```
 
-### - Javscript Bundles:
+### - JavaScript Bundles:
 Add the following bundles at the end of body tag in your Layout page:
 ```cs
 @Scripts.Render("~/bundles/sampletocommonscripts")
@@ -70,7 +70,7 @@ Add the following bundles at the end of body tag in your Layout page:
 @Scripts.Render("~/bundles/sampletoTemplateCommonscripts")
 ```
 
-For more details, see the [Bundles and Optimzation](https://sample.visualstudio.com/sampleto%20Framework/_wiki/wikis/sampleto%20Documentation?pagePath=%2Fsampleto%20Framework%20Manual%2FBuilding%20an%20App%20with%20sampleto%20Framework%2FBundling%20and%20Optimization&pageId=103&wikiVersion=GBmaster).
+For more details, see the [Bundles and Optimization](https://sample.visualstudio.com/sampleto%20Framework/_wiki/wikis/sampleto%20Documentation?pagePath=%2Fsampleto%20Framework%20Manual%2FBuilding%20an%20App%20with%20sampleto%20Framework%2FBundling%20and%20Optimization&pageId=103&wikiVersion=GBmaster).
 
 ## Admin Sections
 You should add the following CSS and Script sections in your admin layout:
@@ -131,7 +131,7 @@ Example:
 You can use the default navigations or create your own view for navigations. In order to use the default view, you must add the following line of code:
 
 ```cs
-@Html.Action("GetMenuParital", "Menu", new { menuTypeId = "PRIMARY", viewName = "~/Areas/Admin/Views/Shared/AdminLayout/_top_menu.cshtml", appId = @sampleto.Framework.Web.Constant.Constants.AdminAppId })
+@Html.Action("GetMenuPartial", "Menu", new { menuTypeId = "PRIMARY", viewName = "~/Areas/Admin/Views/Shared/AdminLayout/_top_menu.cshtml", appId = @sampleto.Framework.Web.Constant.Constants.AdminAppId })
 ```
 
 ### - Custom Navigation View:
@@ -142,10 +142,10 @@ In order to create your own view for navigation, you must follow these instructi
 ```cs
 @model IEnumerable<sampleto.Framework.ViewModels.Navigation.MenuItemVm>
 ```
-2) Design your Navigtion as per your design requirements.
+2) Design your Navigation as per your design requirements.
 3) Use the following line of code inorder to show display your navigations:
 ```cs
-@Html.Action("GetMenuParital", "Menu", new { menuTypeId = "PRIMARY", viewName = [Path_To_Your_Navigations_PartialView], appId = @sampleto.Framework.Web.Constant.Constants.AdminAppId })
+@Html.Action("GetMenuPartial", "Menu", new { menuTypeId = "PRIMARY", viewName = [Path_To_Your_Navigations_PartialView], appId = @sampleto.Framework.Web.Constant.Constants.AdminAppId })
 ```
 
 ## Global Hidden Variables
@@ -159,23 +159,23 @@ There are few global variables which are needed on every admin page. These varia
 Following variables are included in the above partial view:
 
 
-| Input | Usage (C#) | Resource File | en Value |
-|--|--|--|--|--|--|
-| ```<input type="hidden" id="NoneText" value="@Global.NoneText" />``` | Global.NoneText | Global.resx | None |
-| ```<input type="hidden" id="NoDataFoundText" value="@Global.NoDataFoundText" />``` | Global.NoDataFoundText | Global.resx | No Data found |
-| ```<input type="hidden" id="ActivateText" value="@Global.ActivateText" />``` | Global.ActivateText| Global.resx | Activate |
-| ```<input type="hidden" id="DeactivateText" value="@Global.DeactivateText" />``` | Global.DeactivateText | Global.resx | Deactivate |
-| ```<input type="hidden" id="ActiveText" value="@Global.ActiveText" />``` | Global.ActiveText | Global.resx | Active |
-| ```<input type="hidden" id="InactiveText" value="@Global.InActiveText" />``` | Global.InActiveText | Global.resx | Inactive |
-| ```<input type="hidden" id="EditText" value="@Global.EditText" />``` | Global.EditText | Global.resx | Edit |
-| ```<input type="hidden" id="DeleteText" value="@Global.DeleteText" />``` | Global.DeleteText | Global.resx | Delete |
-| ```<input type="hidden" id="ConfirmDeleteRecordText" value="@Global.ConfirmDeleteRecordText" />``` | Global.ConfirmDeleteRecordText | Global.resx | Are you sure to Delete the selected record? |
-| ```<input type="hidden" id="ConfirmDeactivateRecordText" value="@Global.ConfirmDeactivateRecordText" />``` | Global.ConfirmDeactivateRecordText | Global.resx | Are you sure to Deactive the selected record? |
-| ```<input type="hidden" id="ConfirmActivateRecordText" value="@Global.ConfirmActivateRecordText" />``` | Global.ConfirmActivateRecordText | Global.resx | Are you sure to Activate the selected record? |
-| ```<input type="hidden" id="OperationFailedText" value="@Messages.OperationFailedText" />``` | Messages.OperationFailedText | Messages.resx | Operation Failed |
-| ```<input type="hidden" id="OperationPerformedSuccessfullyText" value="@Messages.OperationPerformedSuccessfullyText" />``` | Messages.OperationPerformedSuccessfullyText | Messages.resx | Operation Performed Successfully |
-| ```<input type="hidden" id="ConfirmClearLoginHistoryText" value="@Messages.ConfirmClearLoginHistoryText" />``` | Messages.ConfirmClearLoginHistoryText | Messages.resx | Are you sure to clear Login History? |
-| ```<input type="hidden" id="MissingRequiredFields" value="@Messages.MissingRequiredFields" />``` | Messages.MissingRequiredFields | Messages.resx | Validation Failed, Please Provide Required Fields |
+| Input                                                                                                                      | Usage (C#)                                  | Resource File | en Value                                          |
+| -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------- | ------------------------------------------------- |
+| ```<input type="hidden" id="NoneText" value="@Global.NoneText" />```                                                       | Global.NoneText                             | Global.resx   | None                                              |
+| ```<input type="hidden" id="NoDataFoundText" value="@Global.NoDataFoundText" />```                                         | Global.NoDataFoundText                      | Global.resx   | No Data found                                     |
+| ```<input type="hidden" id="ActivateText" value="@Global.ActivateText" />```                                               | Global.ActivateText                         | Global.resx   | Activate                                          |
+| ```<input type="hidden" id="DeactivateText" value="@Global.DeactivateText" />```                                           | Global.DeactivateText                       | Global.resx   | Deactivate                                        |
+| ```<input type="hidden" id="ActiveText" value="@Global.ActiveText" />```                                                   | Global.ActiveText                           | Global.resx   | Active                                            |
+| ```<input type="hidden" id="InactiveText" value="@Global.InActiveText" />```                                               | Global.InActiveText                         | Global.resx   | Inactive                                          |
+| ```<input type="hidden" id="EditText" value="@Global.EditText" />```                                                       | Global.EditText                             | Global.resx   | Edit                                              |
+| ```<input type="hidden" id="DeleteText" value="@Global.DeleteText" />```                                                   | Global.DeleteText                           | Global.resx   | Delete                                            |
+| ```<input type="hidden" id="ConfirmDeleteRecordText" value="@Global.ConfirmDeleteRecordText" />```                         | Global.ConfirmDeleteRecordText              | Global.resx   | Are you sure to Delete the selected record?       |
+| ```<input type="hidden" id="ConfirmDeactivateRecordText" value="@Global.ConfirmDeactivateRecordText" />```                 | Global.ConfirmDeactivateRecordText          | Global.resx   | Are you sure to Deactivate the selected record?   |
+| ```<input type="hidden" id="ConfirmActivateRecordText" value="@Global.ConfirmActivateRecordText" />```                     | Global.ConfirmActivateRecordText            | Global.resx   | Are you sure to Activate the selected record?     |
+| ```<input type="hidden" id="OperationFailedText" value="@Messages.OperationFailedText" />```                               | Messages.OperationFailedText                | Messages.resx | Operation Failed                                  |
+| ```<input type="hidden" id="OperationPerformedSuccessfullyText" value="@Messages.OperationPerformedSuccessfullyText" />``` | Messages.OperationPerformedSuccessfullyText | Messages.resx | Operation Performed Successfully                  |
+| ```<input type="hidden" id="ConfirmClearLoginHistoryText" value="@Messages.ConfirmClearLoginHistoryText" />```             | Messages.ConfirmClearLoginHistoryText       | Messages.resx | Are you sure to clear Login History?              |
+| ```<input type="hidden" id="MissingRequiredFields" value="@Messages.MissingRequiredFields" />```                           | Messages.MissingRequiredFields              | Messages.resx | Validation Failed, Please Provide Required Fields |
   
 ## Azure Devops Work Item link
 
@@ -192,4 +192,4 @@ Working link between #7 text
 
 Non working link#7
 #7Non working link
-Definitly#7Non working link
+Definitely#7Non working link

@@ -1,8 +1,8 @@
 # How to learn
 
-Here are a few recources
+Here are a few resources
 
-* https://docs.microsoft.com/en-us/azure/devops/project/wiki/publish-repo-to-wiki?view=azure-devops&tabs=browser
+* <https://docs.microsoft.com/en-us/azure/devops/project/wiki/publish-repo-to-wiki?view=azure-devops&tabs=browser>
 
 ## Markdown examples
 
@@ -23,12 +23,10 @@ under the line
 print("block of code");
 ```
 
-
 |table| header1 | column |
 |----|----|----|
 |cell  |cell  |cell  |
 |cell  |cell  |cell  |
-
 
 ## Mermaid diagram
 
@@ -46,6 +44,7 @@ This one needs a red background
 | :x: **CAUTION**  |
 |:----|
 | There will be irreversible consequences|
+
 </div>
 
 This one needs a yellow background
@@ -55,6 +54,7 @@ This one needs a yellow background
 | :warning: **WARNING**  |
 |:----|
 | Dangerous certain consequences of an action can apply|
+
 </div>
 
 This one needs a purlple background
@@ -64,6 +64,7 @@ This one needs a purlple background
 | :grey_exclamation: **Important**  |
 |:----|
 | Essential information required for success |
+
 </div>
 
 This one needs a light blue background
@@ -73,6 +74,7 @@ This one needs a light blue background
 | :bulb: **Tip**  |
 |:----|
 | Optional information to help the user be more successful!|
+
 </div>
 
 This one needs a green background
@@ -82,6 +84,7 @@ This one needs a green background
 | :pencil2: **Note**  |
 |:----|
 | Information the user should note when skimming the document! |
+
 </div>
 
 ## Shorthand
@@ -89,7 +92,5 @@ This one needs a green background
 Here is an example of how to render a PDF from the command line.
 
 ```
- .\azuredevops-export-wiki.exe -v --debug --css .\style.css --header-url .\header.html --footer-url .\footer.html
+ .\AzureDevOps.WikiPDFExport.exe -v --debug --css .\style.css --header-url .\header.html --footer-url .\footer.html
 ```
-
-
