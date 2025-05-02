@@ -11,8 +11,6 @@
 
 I don't know how to say this, but its awesome
 
-
 ## How to create a PDF from all this?
 
-https://github.com/MaxMelcher/AzureDevOps.WikiPDFExport
-
+<https://github.com/BenjaminBrienen/AzureDevOps.WikiPDFExport>
